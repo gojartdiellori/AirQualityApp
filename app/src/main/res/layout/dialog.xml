@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageButton
+        android:id="@+id/btnClose"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="33dp"
+        android:layout_height="32dp"
+        android:layout_alignEnd="@+id/txtTitle"
+        android:layout_alignRight="@+id/txtTitle"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:src="@drawable/ic_close_black_24dp" />
+
+    <TextView
+
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:text="Metric Station"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+        android:text="Name of station"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"/>
+
+
+    <TextView
+
+        android:id="@+id/txtDateInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:text="Date and Time of mesurement "
+        android:textStyle="bold"
+        android:layout_below="@id/txtName"/>
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+
+        android:layout_below="@id/txtDateInfo"
+        android:text="October , 12 "
+        />
+    <TextView
+        android:id="@+id/txtDistanceInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDate"
+        android:textSize="18dp"
+        android:text="Distance from your location "
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+    <TextView
+        android:id="@+id/txtDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDistanceInfo"
+        android:text="12 km"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"/>
+
+
+
+
+
+
+</RelativeLayout>
