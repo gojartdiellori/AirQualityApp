@@ -227,7 +227,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 
 
                     }
-                }.execute("https://api.waqi.info/feed/geo:"+latitude+";"+longitude+"/?token=ad0134200f498e7411e3c01878dcb760176279df");
+                }.execute("https://api.waqi.info/feed/geo:"+latitude+";"+longitude+"/?token=token");
 
                 Log.e("latitude",latitude);
                 Log.e("longitue",longitude);
@@ -250,7 +250,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                         }
 
                     }
-                }.execute("http://api.geonames.org/findNearbyPlaceNameJSON?lat="+latitude+"&lng="+longitude+"&username=gojartd");
+                }.execute("http://api.geonames.org/findNearbyPlaceNameJSON?lat="+latitude+"&lng="+longitude+"&username=user");
 
 
                 handler.postDelayed(this, 60000);
@@ -377,7 +377,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                     } getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#"+jsonParser.getBackground())));
                 }
 
-            }.execute("https://api.waqi.info/feed/geo:"+latitude+";"+longitude+"/?token=ad0134200f498e7411e3c01878dcb760176279df");
+            }.execute("https://api.waqi.info/feed/geo:"+latitude+";"+longitude+"/?token=token");
 
 
             new HttpAsyncTask() {
@@ -399,7 +399,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                     }
 
                 }
-            }.execute("http://api.geonames.org/findNearbyPlaceNameJSON?lat="+latitude+"&lng="+longitude+"&username=gojartd");
+            }.execute("http://api.geonames.org/findNearbyPlaceNameJSON?lat="+latitude+"&lng="+longitude+"&username=user");
 
             againApp();
         }
